@@ -3,5 +3,7 @@ import { render, screen } from "@testing-library/react";
 import BubblePage from "./BubblePage";
 
 test("Fetches data and renders the bubbles", () => {
-  // Finish this test
+  const { getAllByTestId, queryAllByTestId, rerender } = render(
+    <BubblePage colorList={[]}/>
+  )
 });
